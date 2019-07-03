@@ -1,0 +1,61 @@
+
+
+
+def bigMethod(oldList=[], newList=[]):
+    '''
+    下家叫牌规则
+    :param oldList: This is the card from the last one. 这个是上一家叫的牌. 由于上家的牌 已经 通过了 校验规则, 
+    则, newlist的 叫牌规则 属性 需要 与上家一致, 或者大于上家. 单牌 后面只能是单牌/或者炸弹(王炸 与 四张); 备注.
+    因为炸弹 适用于 所有场景, 所以不能限制牌的数量. 故而, len(oldList) 与 len(newList) 无关联关系; 
+    :param newList : 
+    :return: 返回下家能否叫此牌; 输入的 牌 , 必须是 先拍好的. 然后 输入这里, 是为了 判断, 是否能出牌. 而不是 判断是否符合出牌的规则
+    
+    是 炸弹, 或者是 相同属性的 牌; 要么 就不能出牌; 
+    
+    1. 判断 相同属性. 
+    '''
+
+    if len(oldList)!=4 and newList[-1] == oldList[-1]:
+
+        newListSort = S.sortTedOne_Num(sourceList=newList)
+        print('newListSort bigMethod', newListSort)
+        rulsnewList = outPutRules_innerThree(source_list=newListSort)
+        print("新的牌组 bigMethod", rulsnewList)
+        bidList = []
+        print('===========================bigMethod')
+        print(oldList[-1], 'oldList[-1] bigMethod')
+        print(rulsnewList, 'rulsnewList bigMethod')
+        print(rulsnewList[-1], 'rulsnewList[-1] bigMethod')
+        print('=======bigMethod')
+        if oldList[-1] == rulsnewList[-1] and len(oldList)==len(rulsnewList) and len(rulsnewList) > 2 and len(oldList) > 2:
+            print(" 二营长, 你他娘的意大利炮呢....2")
+            print(" oldList[-1] == rulsnewList[-1] and len(oldList)==len(rulsnewList)")
+            oldNum = orderTheNum(oldList[0])
+            newNum = orderTheNum(newList[0])
+            if newNum > oldNum:
+                print("newList 大于 oldList, 可以叫牌")
+            else:
+                print("newList 小于 oldList, 可以叫牌")
+
+        elif len(oldList) <= len(newList):
+            print("'A_simple compl' 二营长, 你他娘的意大利炮呢....3")
+            oldNum = orderTheNum(oldList[0])
+            newNum = orderTheNum(newList[0])
+            if newNum > oldNum:
+                print("newList 大于 oldList, 可以叫牌")
+            else:
+                print("newList 小于 oldList, 可以叫牌")
+        else:
+            print("错误 No0001")
+            pass
+        pass
+    elif len(oldList) == 4 or (newList[0] == 'Kid' and newList[1] == 'Big ghost'):
+        print('newList 是王炸哟, 下家只能 过或者 不信')
+        return "True"
+        pass
+    else:
+        print("不能叫此牌")
+        bidList = 'False'
+        pass
+    return bidList
+    pass

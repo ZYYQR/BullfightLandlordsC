@@ -1,0 +1,1216 @@
+Starting var:.. element = '5'
+Starting var:.. keyList = ['', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A', '2']
+Starting var:.. sourceList = [('5', '黑桃', 'cover'), ('A', '红桃', 'cover'), ('2', '梅花', 'cover'), ('8', '方片', 'cover'), ('4', '红桃',...
+21:24:40.737849 call        20 def sortTed(keyList = [], sourceList = [], element = str()):
+21:24:40.738083 line        28     iolist = [] #''' list(sourceList[element]) '''
+New var:....... iolist = []
+21:24:40.738262 line        29     pok1 = []
+New var:....... pok1 = []
+21:24:40.738440 line        30     pok11 = []
+New var:....... pok11 = []
+21:24:40.738562 line        31     for x in sourceList:
+New var:....... x = ('5', '黑桃', 'cover')
+21:24:40.738692 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5']
+21:24:40.738819 line        31     for x in sourceList:
+Modified var:.. x = ('A', '红桃', 'cover')
+21:24:40.738902 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A']
+21:24:40.738995 line        31     for x in sourceList:
+Modified var:.. x = ('2', '梅花', 'cover')
+21:24:40.739133 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2']
+21:24:40.739247 line        31     for x in sourceList:
+Modified var:.. x = ('8', '方片', 'cover')
+21:24:40.739366 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8']
+21:24:40.739482 line        31     for x in sourceList:
+Modified var:.. x = ('4', '红桃', 'cover')
+21:24:40.739606 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4']
+21:24:40.739721 line        31     for x in sourceList:
+Modified var:.. x = ('9', '梅花', 'cover')
+21:24:40.739834 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9']
+21:24:40.739988 line        31     for x in sourceList:
+Modified var:.. x = ('9', '方片', 'cover')
+21:24:40.740120 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9']
+21:24:40.740253 line        31     for x in sourceList:
+Modified var:.. x = ('3', '方片', 'cover')
+21:24:40.740387 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9', '3']
+21:24:40.740519 line        31     for x in sourceList:
+21:24:40.740607 line        34     x = len(iolist) - 1
+Modified var:.. x = 7
+21:24:40.740742 line        37     i = 0
+New var:....... i = 0
+21:24:40.740875 line        38     while x > len(pok1):
+21:24:40.740965 line        39         for x11 in range(0, x):
+New var:....... x11 = 0
+21:24:40.741134 line        40             x1 = x11
+New var:....... x1 = 0
+21:24:40.741260 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.741345 line        48                 if keyList.index(iolist[x1]):
+21:24:40.741435 line        50                     xc = keyList.index(iolist[x1])
+New var:....... xc = 3
+21:24:40.741642 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3]
+21:24:40.741835 line        55                     del iolist[x1]
+Modified var:.. iolist = ['A', '2', '8', '4', '9', '9', '3']
+21:24:40.742039 line        56                     x2 = len(iolist) - 1
+New var:....... x2 = 6
+21:24:40.742234 line        57                     x = x2
+Modified var:.. x = 6
+21:24:40.742363 line        63                 i = i + 1
+Modified var:.. i = 1
+21:24:40.742491 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.742616 line        48                 if keyList.index(iolist[x1]):
+21:24:40.742747 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 12
+21:24:40.742912 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12]
+21:24:40.743074 line        55                     del iolist[x1]
+Modified var:.. iolist = ['2', '8', '4', '9', '9', '3']
+21:24:40.743202 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 5
+21:24:40.743332 line        57                     x = x2
+Modified var:.. x = 5
+21:24:40.743471 line        63                 i = i + 1
+Modified var:.. i = 2
+21:24:40.743599 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.743689 line        48                 if keyList.index(iolist[x1]):
+21:24:40.743776 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 13
+21:24:40.743906 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13]
+21:24:40.744071 line        55                     del iolist[x1]
+Modified var:.. iolist = ['8', '4', '9', '9', '3']
+21:24:40.744203 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 4
+21:24:40.744285 line        57                     x = x2
+Modified var:.. x = 4
+21:24:40.744366 line        63                 i = i + 1
+Modified var:.. i = 3
+21:24:40.744481 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.744571 line        48                 if keyList.index(iolist[x1]):
+21:24:40.744658 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 6
+21:24:40.744813 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6]
+21:24:40.745018 line        55                     del iolist[x1]
+Modified var:.. iolist = ['4', '9', '9', '3']
+21:24:40.745191 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 3
+21:24:40.745326 line        57                     x = x2
+Modified var:.. x = 3
+21:24:40.745453 line        63                 i = i + 1
+Modified var:.. i = 4
+21:24:40.745550 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.745616 line        48                 if keyList.index(iolist[x1]):
+21:24:40.745684 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 2
+21:24:40.745782 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2]
+21:24:40.745876 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '9', '3']
+21:24:40.745970 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 2
+21:24:40.746065 line        57                     x = x2
+Modified var:.. x = 2
+21:24:40.746158 line        63                 i = i + 1
+Modified var:.. i = 5
+21:24:40.746282 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.746348 line        48                 if keyList.index(iolist[x1]):
+21:24:40.746415 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 7
+21:24:40.746513 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7]
+21:24:40.746619 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '3']
+21:24:40.746735 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 1
+21:24:40.746849 line        57                     x = x2
+Modified var:.. x = 1
+21:24:40.746973 line        63                 i = i + 1
+Modified var:.. i = 6
+21:24:40.747138 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.747250 line        48                 if keyList.index(iolist[x1]):
+21:24:40.747322 line        50                     xc = keyList.index(iolist[x1])
+21:24:40.747420 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7]
+21:24:40.747622 line        55                     del iolist[x1]
+Modified var:.. iolist = ['3']
+21:24:40.747726 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 0
+21:24:40.747796 line        57                     x = x2
+Modified var:.. x = 0
+21:24:40.747865 line        63                 i = i + 1
+Modified var:.. i = 7
+21:24:40.747932 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.747978 line        48                 if keyList.index(iolist[x1]):
+21:24:40.748028 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 1
+21:24:40.748098 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7, 1]
+21:24:40.748171 line        55                     del iolist[x1]
+Modified var:.. iolist = []
+21:24:40.748239 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = -1
+21:24:40.748305 line        57                     x = x2
+Modified var:.. x = -1
+21:24:40.748371 line        63                 i = i + 1
+Modified var:.. i = 8
+21:24:40.748436 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.748481 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 1
+21:24:40.748572 line        40             x1 = x11
+Modified var:.. x1 = 1
+21:24:40.748645 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.748790 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 2
+21:24:40.748893 line        40             x1 = x11
+Modified var:.. x1 = 2
+21:24:40.748958 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.749002 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 3
+21:24:40.749068 line        40             x1 = x11
+Modified var:.. x1 = 3
+21:24:40.749137 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.749185 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 4
+21:24:40.749252 line        40             x1 = x11
+Modified var:.. x1 = 4
+21:24:40.749316 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.749360 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 5
+21:24:40.749429 line        40             x1 = x11
+Modified var:.. x1 = 5
+21:24:40.749546 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.749602 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 6
+21:24:40.749661 line        40             x1 = x11
+Modified var:.. x1 = 6
+21:24:40.749718 line        41             while len(iolist) !=0 and i < 100:
+21:24:40.749757 line        39         for x11 in range(0, x):
+21:24:40.749797 line        38     while x > len(pok1):
+21:24:40.749858 line        65     pok12 = sorted(pok1)
+New var:....... pok12 = [1, 2, 3, 6, 7, 7, 12, 13]
+21:24:40.749924 line        67     i = 1
+Modified var:.. i = 1
+21:24:40.749988 line        68     while i>= 0:
+21:24:40.750045 line        69         for k in pok12:
+New var:....... k = 1
+21:24:40.750106 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3']
+21:24:40.750166 line        69         for k in pok12:
+Modified var:.. k = 2
+21:24:40.750226 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4']
+21:24:40.750285 line        69         for k in pok12:
+Modified var:.. k = 3
+21:24:40.750344 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5']
+21:24:40.750403 line        69         for k in pok12:
+Modified var:.. k = 6
+21:24:40.750462 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8']
+21:24:40.750520 line        69         for k in pok12:
+Modified var:.. k = 7
+21:24:40.750579 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9']
+21:24:40.750638 line        69         for k in pok12:
+21:24:40.750678 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9']
+21:24:40.750739 line        69         for k in pok12:
+Modified var:.. k = 12
+21:24:40.750798 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A']
+21:24:40.750857 line        69         for k in pok12:
+Modified var:.. k = 13
+21:24:40.750915 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A', '2']
+21:24:40.750973 line        69         for k in pok12:
+21:24:40.751035 line        72         i = -1
+Modified var:.. i = -1
+21:24:40.751100 line        68     while i>= 0:
+21:24:40.751146 line        77     p = []
+New var:....... p = []
+21:24:40.751228 line       137     print('\n is p value ', p, '\n pok11', pok11)
+21:24:40.751285 line       138     pass
+21:24:40.751330 return     138     pass
+Return value:.. None
+Starting var:.. element = '5'
+Starting var:.. keyList = ['', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A', '2']
+Starting var:.. sourceList = [('5', '黑桃', 'cover'), ('A', '红桃', 'cover'), ('2', '梅花', 'cover'), ('8', '方片', 'cover'), ('4', '红桃',...
+00:08:08.933876 call        20 def sortTed(keyList = [], sourceList = [], element = str()):
+00:08:08.934040 line        28     iolist = [] #''' list(sourceList[element]) '''
+New var:....... iolist = []
+00:08:08.934127 line        29     pok1 = []
+New var:....... pok1 = []
+00:08:08.934205 line        30     pok11 = []
+New var:....... pok11 = []
+00:08:08.934282 line        31     for x in sourceList:
+New var:....... x = ('5', '黑桃', 'cover')
+00:08:08.934379 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5']
+00:08:08.934475 line        31     for x in sourceList:
+Modified var:.. x = ('A', '红桃', 'cover')
+00:08:08.934564 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A']
+00:08:08.934632 line        31     for x in sourceList:
+Modified var:.. x = ('2', '梅花', 'cover')
+00:08:08.934699 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2']
+00:08:08.934801 line        31     for x in sourceList:
+Modified var:.. x = ('8', '方片', 'cover')
+00:08:08.934881 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8']
+00:08:08.934948 line        31     for x in sourceList:
+Modified var:.. x = ('4', '红桃', 'cover')
+00:08:08.935015 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4']
+00:08:08.935081 line        31     for x in sourceList:
+Modified var:.. x = ('9', '梅花', 'cover')
+00:08:08.935148 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9']
+00:08:08.935214 line        31     for x in sourceList:
+Modified var:.. x = ('9', '方片', 'cover')
+00:08:08.935280 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9']
+00:08:08.935346 line        31     for x in sourceList:
+Modified var:.. x = ('3', '方片', 'cover')
+00:08:08.935412 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9', '3']
+00:08:08.935479 line        31     for x in sourceList:
+00:08:08.935522 line        34     x = len(iolist) - 1
+Modified var:.. x = 7
+00:08:08.935641 line        37     i = 0
+New var:....... i = 0
+00:08:08.935771 line        38     while x > len(pok1):
+00:08:08.935895 line        39         for x11 in range(0, x):
+New var:....... x11 = 0
+00:08:08.936051 line        40             x1 = x11
+New var:....... x1 = 0
+00:08:08.936136 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.936182 line        48                 if keyList.index(iolist[x1]):
+00:08:08.936231 line        50                     xc = keyList.index(iolist[x1])
+New var:....... xc = 3
+00:08:08.936303 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3]
+00:08:08.936392 line        55                     del iolist[x1]
+Modified var:.. iolist = ['A', '2', '8', '4', '9', '9', '3']
+00:08:08.936501 line        56                     x2 = len(iolist) - 1
+New var:....... x2 = 6
+00:08:08.936578 line        57                     x = x2
+Modified var:.. x = 6
+00:08:08.936666 line        63                 i = i + 1
+Modified var:.. i = 1
+00:08:08.936735 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.936781 line        48                 if keyList.index(iolist[x1]):
+00:08:08.936854 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 12
+00:08:08.936934 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12]
+00:08:08.937079 line        55                     del iolist[x1]
+Modified var:.. iolist = ['2', '8', '4', '9', '9', '3']
+00:08:08.937219 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 5
+00:08:08.937312 line        57                     x = x2
+Modified var:.. x = 5
+00:08:08.937396 line        63                 i = i + 1
+Modified var:.. i = 2
+00:08:08.937487 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.937571 line        48                 if keyList.index(iolist[x1]):
+00:08:08.937624 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 13
+00:08:08.937706 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13]
+00:08:08.937784 line        55                     del iolist[x1]
+Modified var:.. iolist = ['8', '4', '9', '9', '3']
+00:08:08.937861 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 4
+00:08:08.937939 line        57                     x = x2
+Modified var:.. x = 4
+00:08:08.938015 line        63                 i = i + 1
+Modified var:.. i = 3
+00:08:08.938091 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.938143 line        48                 if keyList.index(iolist[x1]):
+00:08:08.938291 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 6
+00:08:08.938449 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6]
+00:08:08.938593 line        55                     del iolist[x1]
+Modified var:.. iolist = ['4', '9', '9', '3']
+00:08:08.938673 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 3
+00:08:08.938751 line        57                     x = x2
+Modified var:.. x = 3
+00:08:08.938827 line        63                 i = i + 1
+Modified var:.. i = 4
+00:08:08.938901 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.938952 line        48                 if keyList.index(iolist[x1]):
+00:08:08.939005 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 2
+00:08:08.939083 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2]
+00:08:08.939178 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '9', '3']
+00:08:08.939282 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 2
+00:08:08.939357 line        57                     x = x2
+Modified var:.. x = 2
+00:08:08.939431 line        63                 i = i + 1
+Modified var:.. i = 5
+00:08:08.939506 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.939557 line        48                 if keyList.index(iolist[x1]):
+00:08:08.939610 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 7
+00:08:08.939688 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7]
+00:08:08.939764 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '3']
+00:08:08.939840 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 1
+00:08:08.939915 line        57                     x = x2
+Modified var:.. x = 1
+00:08:08.939991 line        63                 i = i + 1
+Modified var:.. i = 6
+00:08:08.940066 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.940117 line        48                 if keyList.index(iolist[x1]):
+00:08:08.940170 line        50                     xc = keyList.index(iolist[x1])
+00:08:08.940223 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7]
+00:08:08.940300 line        55                     del iolist[x1]
+Modified var:.. iolist = ['3']
+00:08:08.940391 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 0
+00:08:08.940465 line        57                     x = x2
+Modified var:.. x = 0
+00:08:08.940538 line        63                 i = i + 1
+Modified var:.. i = 7
+00:08:08.940611 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.940660 line        48                 if keyList.index(iolist[x1]):
+00:08:08.940712 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 1
+00:08:08.940786 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7, 1]
+00:08:08.940864 line        55                     del iolist[x1]
+Modified var:.. iolist = []
+00:08:08.940936 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = -1
+00:08:08.941010 line        57                     x = x2
+Modified var:.. x = -1
+00:08:08.941082 line        63                 i = i + 1
+Modified var:.. i = 8
+00:08:08.941154 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.941203 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 1
+00:08:08.941318 line        40             x1 = x11
+Modified var:.. x1 = 1
+00:08:08.941402 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.941472 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 2
+00:08:08.941577 line        40             x1 = x11
+Modified var:.. x1 = 2
+00:08:08.941662 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.941726 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 3
+00:08:08.941828 line        40             x1 = x11
+Modified var:.. x1 = 3
+00:08:08.941986 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.942089 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 4
+00:08:08.942240 line        40             x1 = x11
+Modified var:.. x1 = 4
+00:08:08.942341 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.942394 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 5
+00:08:08.942473 line        40             x1 = x11
+Modified var:.. x1 = 5
+00:08:08.942549 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.942600 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 6
+00:08:08.942677 line        40             x1 = x11
+Modified var:.. x1 = 6
+00:08:08.942751 line        41             while len(iolist) !=0 and i < 100:
+00:08:08.942801 line        39         for x11 in range(0, x):
+00:08:08.942853 line        38     while x > len(pok1):
+00:08:08.942906 line        65     pok12 = sorted(pok1)
+New var:....... pok12 = [1, 2, 3, 6, 7, 7, 12, 13]
+00:08:08.942986 line        67     i = 1
+Modified var:.. i = 1
+00:08:08.943079 line        68     while i>= 0:
+00:08:08.943123 line        69         for k in pok12:
+New var:....... k = 1
+00:08:08.943189 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3']
+00:08:08.943256 line        69         for k in pok12:
+Modified var:.. k = 2
+00:08:08.943321 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4']
+00:08:08.943386 line        69         for k in pok12:
+Modified var:.. k = 3
+00:08:08.943451 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5']
+00:08:08.943516 line        69         for k in pok12:
+Modified var:.. k = 6
+00:08:08.943580 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8']
+00:08:08.943645 line        69         for k in pok12:
+Modified var:.. k = 7
+00:08:08.943708 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9']
+00:08:08.943772 line        69         for k in pok12:
+00:08:08.943816 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9']
+00:08:08.943922 line        69         for k in pok12:
+Modified var:.. k = 12
+00:08:08.943998 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A']
+00:08:08.944075 line        69         for k in pok12:
+Modified var:.. k = 13
+00:08:08.944154 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A', '2']
+00:08:08.944232 line        69         for k in pok12:
+00:08:08.944286 line        72         i = -1
+Modified var:.. i = -1
+00:08:08.944368 line        68     while i>= 0:
+00:08:08.944421 line        73     print('已经按照index 排序的 pok11', pok11)
+00:08:08.944523 line        77     p = []
+New var:....... p = []
+00:08:08.944645 line       137     print('\n is p value ', p, '\n pok11', pok11)
+00:08:08.944724 line       138     pass
+00:08:08.944774 return     138     pass
+Return value:.. None
+Starting var:.. element = '5'
+Starting var:.. keyList = ['', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A', '2']
+Starting var:.. sourceList = [('5', '黑桃', 'cover'), ('A', '红桃', 'cover'), ('2', '梅花', 'cover'), ('8', '方片', 'cover'), ('4', '红桃',...
+00:08:38.982128 call        20 def sortTed(keyList = [], sourceList = [], element = str()):
+00:08:38.982287 line        28     iolist = [] #''' list(sourceList[element]) '''
+New var:....... iolist = []
+00:08:38.982363 line        29     pok1 = []
+New var:....... pok1 = []
+00:08:38.982431 line        30     pok11 = []
+New var:....... pok11 = []
+00:08:38.982498 line        31     for x in sourceList:
+New var:....... x = ('5', '黑桃', 'cover')
+00:08:38.982581 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5']
+00:08:38.982698 line        31     for x in sourceList:
+Modified var:.. x = ('A', '红桃', 'cover')
+00:08:38.982789 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A']
+00:08:38.982879 line        31     for x in sourceList:
+Modified var:.. x = ('2', '梅花', 'cover')
+00:08:38.982953 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2']
+00:08:38.983028 line        31     for x in sourceList:
+Modified var:.. x = ('8', '方片', 'cover')
+00:08:38.983101 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8']
+00:08:38.983177 line        31     for x in sourceList:
+Modified var:.. x = ('4', '红桃', 'cover')
+00:08:38.983250 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4']
+00:08:38.983322 line        31     for x in sourceList:
+Modified var:.. x = ('9', '梅花', 'cover')
+00:08:38.983394 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9']
+00:08:38.983466 line        31     for x in sourceList:
+Modified var:.. x = ('9', '方片', 'cover')
+00:08:38.983537 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9']
+00:08:38.983609 line        31     for x in sourceList:
+Modified var:.. x = ('3', '方片', 'cover')
+00:08:38.983680 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9', '3']
+00:08:38.983767 line        31     for x in sourceList:
+00:08:38.983813 line        34     x = len(iolist) - 1
+Modified var:.. x = 7
+00:08:38.983884 line        37     i = 0
+New var:....... i = 0
+00:08:38.983954 line        38     while x > len(pok1):
+00:08:38.984000 line        39         for x11 in range(0, x):
+New var:....... x11 = 0
+00:08:38.984075 line        40             x1 = x11
+New var:....... x1 = 0
+00:08:38.984146 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.984194 line        48                 if keyList.index(iolist[x1]):
+00:08:38.984245 line        50                     xc = keyList.index(iolist[x1])
+New var:....... xc = 3
+00:08:38.984320 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3]
+00:08:38.984392 line        55                     del iolist[x1]
+Modified var:.. iolist = ['A', '2', '8', '4', '9', '9', '3']
+00:08:38.984463 line        56                     x2 = len(iolist) - 1
+New var:....... x2 = 6
+00:08:38.984535 line        57                     x = x2
+Modified var:.. x = 6
+00:08:38.984628 line        63                 i = i + 1
+Modified var:.. i = 1
+00:08:38.984721 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.984788 line        48                 if keyList.index(iolist[x1]):
+00:08:38.984834 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 12
+00:08:38.984901 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12]
+00:08:38.984965 line        55                     del iolist[x1]
+Modified var:.. iolist = ['2', '8', '4', '9', '9', '3']
+00:08:38.985036 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 5
+00:08:38.985100 line        57                     x = x2
+Modified var:.. x = 5
+00:08:38.985162 line        63                 i = i + 1
+Modified var:.. i = 2
+00:08:38.985223 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.985265 line        48                 if keyList.index(iolist[x1]):
+00:08:38.985309 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 13
+00:08:38.985374 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13]
+00:08:38.985444 line        55                     del iolist[x1]
+Modified var:.. iolist = ['8', '4', '9', '9', '3']
+00:08:38.985510 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 4
+00:08:38.985574 line        57                     x = x2
+Modified var:.. x = 4
+00:08:38.985638 line        63                 i = i + 1
+Modified var:.. i = 3
+00:08:38.985701 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.985743 line        48                 if keyList.index(iolist[x1]):
+00:08:38.985787 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 6
+00:08:38.985852 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6]
+00:08:38.985914 line        55                     del iolist[x1]
+Modified var:.. iolist = ['4', '9', '9', '3']
+00:08:38.985976 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 3
+00:08:38.986040 line        57                     x = x2
+Modified var:.. x = 3
+00:08:38.986102 line        63                 i = i + 1
+Modified var:.. i = 4
+00:08:38.986164 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.986206 line        48                 if keyList.index(iolist[x1]):
+00:08:38.986251 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 2
+00:08:38.986314 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2]
+00:08:38.986377 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '9', '3']
+00:08:38.986439 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 2
+00:08:38.986502 line        57                     x = x2
+Modified var:.. x = 2
+00:08:38.986564 line        63                 i = i + 1
+Modified var:.. i = 5
+00:08:38.986626 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.986668 line        48                 if keyList.index(iolist[x1]):
+00:08:38.986712 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 7
+00:08:38.986776 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7]
+00:08:38.986838 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '3']
+00:08:38.986900 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 1
+00:08:38.986962 line        57                     x = x2
+Modified var:.. x = 1
+00:08:38.987024 line        63                 i = i + 1
+Modified var:.. i = 6
+00:08:38.987086 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.987129 line        48                 if keyList.index(iolist[x1]):
+00:08:38.987173 line        50                     xc = keyList.index(iolist[x1])
+00:08:38.987217 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7]
+00:08:38.987281 line        55                     del iolist[x1]
+Modified var:.. iolist = ['3']
+00:08:38.987344 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 0
+00:08:38.987407 line        57                     x = x2
+Modified var:.. x = 0
+00:08:38.987470 line        63                 i = i + 1
+Modified var:.. i = 7
+00:08:38.987532 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.987575 line        48                 if keyList.index(iolist[x1]):
+00:08:38.987618 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 1
+00:08:38.987688 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7, 1]
+00:08:38.987751 line        55                     del iolist[x1]
+Modified var:.. iolist = []
+00:08:38.987813 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = -1
+00:08:38.987876 line        57                     x = x2
+Modified var:.. x = -1
+00:08:38.987938 line        63                 i = i + 1
+Modified var:.. i = 8
+00:08:38.988000 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.988042 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 1
+00:08:38.988106 line        40             x1 = x11
+Modified var:.. x1 = 1
+00:08:38.988168 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.988210 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 2
+00:08:38.988274 line        40             x1 = x11
+Modified var:.. x1 = 2
+00:08:38.988336 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.988378 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 3
+00:08:38.988441 line        40             x1 = x11
+Modified var:.. x1 = 3
+00:08:38.988503 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.988545 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 4
+00:08:38.988609 line        40             x1 = x11
+Modified var:.. x1 = 4
+00:08:38.988671 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.988713 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 5
+00:08:38.988776 line        40             x1 = x11
+Modified var:.. x1 = 5
+00:08:38.988837 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.988879 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 6
+00:08:38.988944 line        40             x1 = x11
+Modified var:.. x1 = 6
+00:08:38.989006 line        41             while len(iolist) !=0 and i < 100:
+00:08:38.989047 line        39         for x11 in range(0, x):
+00:08:38.989091 line        38     while x > len(pok1):
+00:08:38.989134 line        65     pok12 = sorted(pok1)
+New var:....... pok12 = [1, 2, 3, 6, 7, 7, 12, 13]
+00:08:38.989202 line        66     print('sort的index-pok12', pok12)
+00:08:38.989260 line        67     i = 1
+Modified var:.. i = 1
+00:08:38.989327 line        68     while i>= 0:
+00:08:38.989370 line        69         for k in pok12:
+New var:....... k = 1
+00:08:38.989452 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3']
+00:08:38.989524 line        69         for k in pok12:
+Modified var:.. k = 2
+00:08:38.989604 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4']
+00:08:38.989664 line        69         for k in pok12:
+Modified var:.. k = 3
+00:08:38.989723 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5']
+00:08:38.989783 line        69         for k in pok12:
+Modified var:.. k = 6
+00:08:38.989842 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8']
+00:08:38.989901 line        69         for k in pok12:
+Modified var:.. k = 7
+00:08:38.989960 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9']
+00:08:38.990020 line        69         for k in pok12:
+00:08:38.990060 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9']
+00:08:38.990122 line        69         for k in pok12:
+Modified var:.. k = 12
+00:08:38.990181 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A']
+00:08:38.990240 line        69         for k in pok12:
+Modified var:.. k = 13
+00:08:38.990299 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A', '2']
+00:08:38.990358 line        69         for k in pok12:
+00:08:38.990399 line        72         i = -1
+Modified var:.. i = -1
+00:08:38.990464 line        68     while i>= 0:
+00:08:38.990506 line        73     print('已经按照index 排序的 pok11', pok11)
+00:08:38.990578 line        77     p = []
+New var:....... p = []
+00:08:38.990683 line       137     print('\n is p value ', p, '\n pok11', pok11)
+00:08:38.990751 line       138     pass
+00:08:38.990795 return     138     pass
+Return value:.. None
+Starting var:.. element = '5'
+Starting var:.. keyList = ['', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A', '2']
+Starting var:.. sourceList = [('5', '黑桃', 'cover'), ('A', '红桃', 'cover'), ('2', '梅花', 'cover'), ('8', '方片', 'cover'), ('4', '红桃',...
+00:09:37.102982 call        20 def sortTed(keyList = [], sourceList = [], element = str()):
+00:09:37.103121 line        28     iolist = [] #''' list(sourceList[element]) '''
+New var:....... iolist = []
+00:09:37.103194 line        29     pok1 = []
+New var:....... pok1 = []
+00:09:37.103260 line        30     pok11 = []
+New var:....... pok11 = []
+00:09:37.103324 line        31     for x in sourceList:
+New var:....... x = ('5', '黑桃', 'cover')
+00:09:37.103389 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5']
+00:09:37.103453 line        31     for x in sourceList:
+Modified var:.. x = ('A', '红桃', 'cover')
+00:09:37.103516 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A']
+00:09:37.103579 line        31     for x in sourceList:
+Modified var:.. x = ('2', '梅花', 'cover')
+00:09:37.103641 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2']
+00:09:37.103704 line        31     for x in sourceList:
+Modified var:.. x = ('8', '方片', 'cover')
+00:09:37.103765 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8']
+00:09:37.103827 line        31     for x in sourceList:
+Modified var:.. x = ('4', '红桃', 'cover')
+00:09:37.103888 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4']
+00:09:37.103950 line        31     for x in sourceList:
+Modified var:.. x = ('9', '梅花', 'cover')
+00:09:37.104011 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9']
+00:09:37.104072 line        31     for x in sourceList:
+Modified var:.. x = ('9', '方片', 'cover')
+00:09:37.104133 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9']
+00:09:37.104193 line        31     for x in sourceList:
+Modified var:.. x = ('3', '方片', 'cover')
+00:09:37.104255 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9', '3']
+00:09:37.104317 line        31     for x in sourceList:
+00:09:37.104357 line        33     print('取 需要排列的 iolist 值list', iolist)
+00:09:37.104418 line        34     x = len(iolist) - 1
+Modified var:.. x = 7
+00:09:37.104484 line        37     i = 0
+New var:....... i = 0
+00:09:37.104563 line        38     while x > len(pok1):
+00:09:37.104606 line        39         for x11 in range(0, x):
+New var:....... x11 = 0
+00:09:37.104675 line        40             x1 = x11
+New var:....... x1 = 0
+00:09:37.104754 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.104797 line        48                 if keyList.index(iolist[x1]):
+00:09:37.104842 line        50                     xc = keyList.index(iolist[x1])
+New var:....... xc = 3
+00:09:37.104932 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3]
+00:09:37.105014 line        55                     del iolist[x1]
+Modified var:.. iolist = ['A', '2', '8', '4', '9', '9', '3']
+00:09:37.105078 line        56                     x2 = len(iolist) - 1
+New var:....... x2 = 6
+00:09:37.105142 line        57                     x = x2
+Modified var:.. x = 6
+00:09:37.105206 line        63                 i = i + 1
+Modified var:.. i = 1
+00:09:37.105270 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.105313 line        48                 if keyList.index(iolist[x1]):
+00:09:37.105364 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 12
+00:09:37.105430 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12]
+00:09:37.105541 line        55                     del iolist[x1]
+Modified var:.. iolist = ['2', '8', '4', '9', '9', '3']
+00:09:37.105604 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 5
+00:09:37.105666 line        57                     x = x2
+Modified var:.. x = 5
+00:09:37.105729 line        63                 i = i + 1
+Modified var:.. i = 2
+00:09:37.105791 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.105833 line        48                 if keyList.index(iolist[x1]):
+00:09:37.105878 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 13
+00:09:37.105943 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13]
+00:09:37.106018 line        55                     del iolist[x1]
+Modified var:.. iolist = ['8', '4', '9', '9', '3']
+00:09:37.106077 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 4
+00:09:37.106136 line        57                     x = x2
+Modified var:.. x = 4
+00:09:37.106195 line        63                 i = i + 1
+Modified var:.. i = 3
+00:09:37.106253 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.106292 line        48                 if keyList.index(iolist[x1]):
+00:09:37.106334 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 6
+00:09:37.106395 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6]
+00:09:37.106453 line        55                     del iolist[x1]
+Modified var:.. iolist = ['4', '9', '9', '3']
+00:09:37.106511 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 3
+00:09:37.106570 line        57                     x = x2
+Modified var:.. x = 3
+00:09:37.106628 line        63                 i = i + 1
+Modified var:.. i = 4
+00:09:37.106686 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.106724 line        48                 if keyList.index(iolist[x1]):
+00:09:37.106765 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 2
+00:09:37.106825 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2]
+00:09:37.106884 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '9', '3']
+00:09:37.106945 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 2
+00:09:37.107004 line        57                     x = x2
+Modified var:.. x = 2
+00:09:37.107062 line        63                 i = i + 1
+Modified var:.. i = 5
+00:09:37.107142 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.107198 line        48                 if keyList.index(iolist[x1]):
+00:09:37.107239 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 7
+00:09:37.107299 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7]
+00:09:37.107357 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '3']
+00:09:37.107415 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 1
+00:09:37.107473 line        57                     x = x2
+Modified var:.. x = 1
+00:09:37.107531 line        63                 i = i + 1
+Modified var:.. i = 6
+00:09:37.107588 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.107627 line        48                 if keyList.index(iolist[x1]):
+00:09:37.107668 line        50                     xc = keyList.index(iolist[x1])
+00:09:37.107708 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7]
+00:09:37.107768 line        55                     del iolist[x1]
+Modified var:.. iolist = ['3']
+00:09:37.107826 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 0
+00:09:37.107905 line        57                     x = x2
+Modified var:.. x = 0
+00:09:37.107987 line        63                 i = i + 1
+Modified var:.. i = 7
+00:09:37.108047 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.108086 line        48                 if keyList.index(iolist[x1]):
+00:09:37.108128 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 1
+00:09:37.108187 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7, 1]
+00:09:37.108245 line        55                     del iolist[x1]
+Modified var:.. iolist = []
+00:09:37.108302 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = -1
+00:09:37.108360 line        57                     x = x2
+Modified var:.. x = -1
+00:09:37.108417 line        63                 i = i + 1
+Modified var:.. i = 8
+00:09:37.108475 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.108514 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 1
+00:09:37.108573 line        40             x1 = x11
+Modified var:.. x1 = 1
+00:09:37.108630 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.108669 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 2
+00:09:37.108728 line        40             x1 = x11
+Modified var:.. x1 = 2
+00:09:37.108786 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.108825 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 3
+00:09:37.108883 line        40             x1 = x11
+Modified var:.. x1 = 3
+00:09:37.108940 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.108979 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 4
+00:09:37.109040 line        40             x1 = x11
+Modified var:.. x1 = 4
+00:09:37.109097 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.109136 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 5
+00:09:37.109195 line        40             x1 = x11
+Modified var:.. x1 = 5
+00:09:37.109252 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.109290 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 6
+00:09:37.109349 line        40             x1 = x11
+Modified var:.. x1 = 6
+00:09:37.109407 line        41             while len(iolist) !=0 and i < 100:
+00:09:37.109470 line        39         for x11 in range(0, x):
+00:09:37.109532 line        38     while x > len(pok1):
+00:09:37.109576 line        65     pok12 = sorted(pok1)
+New var:....... pok12 = [1, 2, 3, 6, 7, 7, 12, 13]
+00:09:37.109656 line        66     print('sort的index-pok12', pok12)
+00:09:37.109704 line        67     i = 1
+Modified var:.. i = 1
+00:09:37.109766 line        68     while i>= 0:
+00:09:37.109806 line        69         for k in pok12:
+New var:....... k = 1
+00:09:37.109868 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3']
+00:09:37.109929 line        69         for k in pok12:
+Modified var:.. k = 2
+00:09:37.110025 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4']
+00:09:37.110120 line        69         for k in pok12:
+Modified var:.. k = 3
+00:09:37.110182 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5']
+00:09:37.110244 line        69         for k in pok12:
+Modified var:.. k = 6
+00:09:37.110304 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8']
+00:09:37.110363 line        69         for k in pok12:
+Modified var:.. k = 7
+00:09:37.110422 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9']
+00:09:37.110482 line        69         for k in pok12:
+00:09:37.110524 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9']
+00:09:37.110585 line        69         for k in pok12:
+Modified var:.. k = 12
+00:09:37.110645 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A']
+00:09:37.110705 line        69         for k in pok12:
+Modified var:.. k = 13
+00:09:37.110768 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A', '2']
+00:09:37.110848 line        69         for k in pok12:
+00:09:37.110893 line        72         i = -1
+Modified var:.. i = -1
+00:09:37.110972 line        68     while i>= 0:
+00:09:37.111013 line        73     print('已经按照index 排序的 pok11', pok11)
+00:09:37.111062 line        77     p = []
+New var:....... p = []
+00:09:37.111126 line       137     print('\n pok11', pok11)
+00:09:37.111194 line       138     pass
+00:09:37.111241 return     138     pass
+Return value:.. None
+Starting var:.. element = '5'
+Starting var:.. keyList = ['', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A', '2']
+Starting var:.. sourceList = [('5', '黑桃', 'cover'), ('A', '红桃', 'cover'), ('2', '梅花', 'cover'), ('8', '方片', 'cover'), ('4', '红桃',...
+22:26:22.082017 call        20 def sortTed(keyList = [], sourceList = [], element = str()):
+22:26:22.082276 line        28     iolist = [] #''' list(sourceList[element]) '''
+New var:....... iolist = []
+22:26:22.082431 line        29     pok1 = []
+New var:....... pok1 = []
+22:26:22.082581 line        30     pok11 = []
+New var:....... pok11 = []
+22:26:22.082735 line        31     for x in sourceList:
+New var:....... x = ('5', '黑桃', 'cover')
+22:26:22.082896 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5']
+22:26:22.083054 line        31     for x in sourceList:
+Modified var:.. x = ('A', '红桃', 'cover')
+22:26:22.083210 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A']
+22:26:22.083366 line        31     for x in sourceList:
+Modified var:.. x = ('2', '梅花', 'cover')
+22:26:22.083520 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2']
+22:26:22.083676 line        31     for x in sourceList:
+Modified var:.. x = ('8', '方片', 'cover')
+22:26:22.083836 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8']
+22:26:22.084029 line        31     for x in sourceList:
+Modified var:.. x = ('4', '红桃', 'cover')
+22:26:22.084220 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4']
+22:26:22.084498 line        31     for x in sourceList:
+Modified var:.. x = ('9', '梅花', 'cover')
+22:26:22.084700 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9']
+22:26:22.084861 line        31     for x in sourceList:
+Modified var:.. x = ('9', '方片', 'cover')
+22:26:22.085013 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9']
+22:26:22.085169 line        31     for x in sourceList:
+Modified var:.. x = ('3', '方片', 'cover')
+22:26:22.085322 line        32         iolist.append(x[0][0])
+Modified var:.. iolist = ['5', 'A', '2', '8', '4', '9', '9', '3']
+22:26:22.085481 line        31     for x in sourceList:
+22:26:22.085586 line        34     x = len(iolist) - 1
+Modified var:.. x = 7
+22:26:22.085746 line        37     i = 0
+New var:....... i = 0
+22:26:22.085904 line        38     while x > len(pok1):
+22:26:22.086011 line        39         for x11 in range(0, x):
+New var:....... x11 = 0
+22:26:22.086177 line        40             x1 = x11
+New var:....... x1 = 0
+22:26:22.086337 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.086444 line        48                 if keyList.index(iolist[x1]):
+22:26:22.086549 line        50                     xc = keyList.index(iolist[x1])
+New var:....... xc = 3
+22:26:22.086710 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3]
+22:26:22.086865 line        55                     del iolist[x1]
+Modified var:.. iolist = ['A', '2', '8', '4', '9', '9', '3']
+22:26:22.087017 line        56                     x2 = len(iolist) - 1
+New var:....... x2 = 6
+22:26:22.087167 line        57                     x = x2
+Modified var:.. x = 6
+22:26:22.087319 line        63                 i = i + 1
+Modified var:.. i = 1
+22:26:22.087475 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.087567 line        48                 if keyList.index(iolist[x1]):
+22:26:22.087663 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 12
+22:26:22.087816 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12]
+22:26:22.087980 line        55                     del iolist[x1]
+Modified var:.. iolist = ['2', '8', '4', '9', '9', '3']
+22:26:22.088146 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 5
+22:26:22.088310 line        57                     x = x2
+Modified var:.. x = 5
+22:26:22.088463 line        63                 i = i + 1
+Modified var:.. i = 2
+22:26:22.088603 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.088702 line        48                 if keyList.index(iolist[x1]):
+22:26:22.088799 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 13
+22:26:22.088937 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13]
+22:26:22.089070 line        55                     del iolist[x1]
+Modified var:.. iolist = ['8', '4', '9', '9', '3']
+22:26:22.089203 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 4
+22:26:22.089335 line        57                     x = x2
+Modified var:.. x = 4
+22:26:22.089464 line        63                 i = i + 1
+Modified var:.. i = 3
+22:26:22.089611 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.089715 line        48                 if keyList.index(iolist[x1]):
+22:26:22.089826 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 6
+22:26:22.089989 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6]
+22:26:22.090149 line        55                     del iolist[x1]
+Modified var:.. iolist = ['4', '9', '9', '3']
+22:26:22.090307 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 3
+22:26:22.090445 line        57                     x = x2
+Modified var:.. x = 3
+22:26:22.090581 line        63                 i = i + 1
+Modified var:.. i = 4
+22:26:22.090718 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.090812 line        48                 if keyList.index(iolist[x1]):
+22:26:22.090923 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 2
+22:26:22.091081 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2]
+22:26:22.091225 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '9', '3']
+22:26:22.091365 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 2
+22:26:22.091504 line        57                     x = x2
+Modified var:.. x = 2
+22:26:22.091646 line        63                 i = i + 1
+Modified var:.. i = 5
+22:26:22.091800 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.091902 line        48                 if keyList.index(iolist[x1]):
+22:26:22.092006 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 7
+22:26:22.092146 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7]
+22:26:22.092281 line        55                     del iolist[x1]
+Modified var:.. iolist = ['9', '3']
+22:26:22.092436 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 1
+22:26:22.092583 line        57                     x = x2
+Modified var:.. x = 1
+22:26:22.092726 line        63                 i = i + 1
+Modified var:.. i = 6
+22:26:22.092868 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.092966 line        48                 if keyList.index(iolist[x1]):
+22:26:22.093065 line        50                     xc = keyList.index(iolist[x1])
+22:26:22.093167 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7]
+22:26:22.093306 line        55                     del iolist[x1]
+Modified var:.. iolist = ['3']
+22:26:22.093457 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = 0
+22:26:22.093599 line        57                     x = x2
+Modified var:.. x = 0
+22:26:22.093736 line        63                 i = i + 1
+Modified var:.. i = 7
+22:26:22.093874 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.093970 line        48                 if keyList.index(iolist[x1]):
+22:26:22.094070 line        50                     xc = keyList.index(iolist[x1])
+Modified var:.. xc = 1
+22:26:22.094212 line        52                     pok1.append(xc)
+Modified var:.. pok1 = [3, 12, 13, 6, 2, 7, 7, 1]
+22:26:22.094349 line        55                     del iolist[x1]
+Modified var:.. iolist = []
+22:26:22.094492 line        56                     x2 = len(iolist) - 1
+Modified var:.. x2 = -1
+22:26:22.094635 line        57                     x = x2
+Modified var:.. x = -1
+22:26:22.094777 line        63                 i = i + 1
+Modified var:.. i = 8
+22:26:22.094918 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.095014 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 1
+22:26:22.095163 line        40             x1 = x11
+Modified var:.. x1 = 1
+22:26:22.095323 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.095439 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 2
+22:26:22.095601 line        40             x1 = x11
+Modified var:.. x1 = 2
+22:26:22.095751 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.095853 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 3
+22:26:22.096018 line        40             x1 = x11
+Modified var:.. x1 = 3
+22:26:22.096166 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.096266 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 4
+22:26:22.096414 line        40             x1 = x11
+Modified var:.. x1 = 4
+22:26:22.096559 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.096659 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 5
+22:26:22.096808 line        40             x1 = x11
+Modified var:.. x1 = 5
+22:26:22.096966 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.097067 line        39         for x11 in range(0, x):
+Modified var:.. x11 = 6
+22:26:22.097214 line        40             x1 = x11
+Modified var:.. x1 = 6
+22:26:22.097352 line        41             while len(iolist) !=0 and i < 100:
+22:26:22.097448 line        39         for x11 in range(0, x):
+22:26:22.097545 line        38     while x > len(pok1):
+22:26:22.097650 line        65     pok12 = sorted(pok1)
+New var:....... pok12 = [1, 2, 3, 6, 7, 7, 12, 13]
+22:26:22.097809 line        66     print('sort的index-pok12', pok12)
+22:26:22.097933 line        67     i = 1
+Modified var:.. i = 1
+22:26:22.098078 line        68     while i>= 0:
+22:26:22.098172 line        69         for k in pok12:
+New var:....... k = 1
+22:26:22.098312 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3']
+22:26:22.098458 line        69         for k in pok12:
+Modified var:.. k = 2
+22:26:22.098609 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4']
+22:26:22.098759 line        69         for k in pok12:
+Modified var:.. k = 3
+22:26:22.098908 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5']
+22:26:22.099053 line        69         for k in pok12:
+Modified var:.. k = 6
+22:26:22.099195 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8']
+22:26:22.099336 line        69         for k in pok12:
+Modified var:.. k = 7
+22:26:22.099482 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9']
+22:26:22.099623 line        69         for k in pok12:
+22:26:22.099720 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9']
+22:26:22.099863 line        69         for k in pok12:
+Modified var:.. k = 12
+22:26:22.100028 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A']
+22:26:22.100170 line        69         for k in pok12:
+Modified var:.. k = 13
+22:26:22.100310 line        70             pok11.append(keyList[k])
+Modified var:.. pok11 = ['3', '4', '5', '8', '9', '9', 'A', '2']
+22:26:22.100454 line        69         for k in pok12:
+22:26:22.100552 line        72         i = -1
+Modified var:.. i = -1
+22:26:22.100695 line        68     while i>= 0:
+22:26:22.100795 line        73     print('已经按照index 排序的 pok11', pok11)
+22:26:22.100921 line        74     print('\n pok11', pok11)
+22:26:22.101042 line        75     pass
+22:26:22.101149 return      75     pass
+Return value:.. None

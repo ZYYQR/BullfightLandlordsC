@@ -1,0 +1,48 @@
+    while i >= 0 and x <= xx and pok11 != []:
+        # print('----sign1---  ', xx, 'i value is ', i)
+        x = 0
+        xx = len(pok11)
+        print('xx long , x isssss %s'%(x), 'xx ', xx)
+        for d in range(0, xx):
+            if pok11 != None and x < xx:
+                print('x==========', x, ' | d  ', d)
+                # print('x', x, ' |d ', d, 'pok11', pok11[d-1], '\n | sourceList ', sourceList)
+                if pok11[d] == sourceList[x][0]:
+                    # p.pop(d)
+                    # p.insert(d, sourceList[x])
+                    del pok11[d]
+                    p[d] = sourceList[x]
+                    sourceList.remove(sourceList[x])
+                    # print('index d', 'd', 'sourceList[x]', sourceList[x], 'x', x, '\n pisv', p)
+                    i = i + 1
+                    print("你大爷还是你大爷", pok11)
+                    thisCom = operator.eq(sourceListcp, p)
+                    print('this is 比较结果， 为true 时， 两个list相等')
+                    if thisCom:
+                        i = -1
+                        x = -2
+                        print('00sign30 000')
+                        continue
+                    elif len(sourceListcp) < len(p):
+                        print("判断出错， 导致 输出list 大于 源list")
+                        break
+                else:
+                    print('sign4 到此一游')
+                    i = i + 1
+                    while i == 16:
+                        print(' i value ', i)
+                        i = -1
+                        break
+                    pass
+            else:
+                break
+        if pok11 != []:
+            # print(" remove the ", pok11[d])
+            # pok11 = pok11.pop(d - 1)
+            print('pok11', pok11, len(pok11))
+            xx = len(pok11)
+            print('xx is ', xx)
+        x = x + 1
+    # print('\nis p value ', p[0:len(pok11)])
+    print('\nis p value ', p, '\n pok11', pok11)
+    pass
