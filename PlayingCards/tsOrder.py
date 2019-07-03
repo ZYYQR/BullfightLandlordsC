@@ -3,7 +3,7 @@ import time
 
 '''  吹牛斗地主 
 
-        1. 检测谁能出牌. 记录谁 刚出牌.12345
+        1. 检测谁能出牌. 记录谁 刚出牌.123452
 
         Number of rounds of play(出牌轮数): NrPlay
         Playing status(出牌状态):PlayingS
